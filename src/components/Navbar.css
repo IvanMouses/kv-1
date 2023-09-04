@@ -1,0 +1,304 @@
+.navbar-container {
+  z-index: 100;
+  padding: 0px 20px;
+}
+
+.navbar-above-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0px;
+  margin-bottom: 28px;
+  max-width: 1170px;
+  margin: 0px auto 0px auto;
+}
+.navbar-above-section-scroll-active {
+  margin-bottom: 100px;
+}
+
+.navbar-above-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.navbar-above-logo {
+  display: flex;
+}
+
+.navbar-above-body {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+}
+
+.navbar-above-whatsapp {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #262629;
+  margin-right: 40px;
+  letter-spacing: 0;
+}
+
+.navbar-above-whatsapp-icon {
+  width: 17.5px;
+  height: 17.5px;
+  padding: 6.25px;
+  background-color: #29a71a;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.navbar-above-phone {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 21px;
+  font-family: "Century Gothic";
+}
+
+.navbar-main-body {
+  display: flex;
+  column-gap: 40px;
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.navbar-main-section {
+  display: flex;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  column-gap: 64px;
+  z-index: 100;
+  padding: 30px 0px;
+  background-color: #f4f4f4;
+}
+.navbar-main-section-scroll-active {
+  position: fixed;
+  top: 0px;
+  background-color: #ebebeb;
+  transition: top 0.3s;
+  width: 100vw;
+  margin-left: -28px;
+}
+
+.navbar-main-icon-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.navbar-main-icon-section-icon {
+  position: relative;
+  z-index: 110;
+  width: 17px;
+  height: 2px;
+  margin-right: 9px;
+  border-radius: 2px;
+  background-color: #4f4f4f;
+}
+.navbar-main-icon-section-icon::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 13px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: inherit;
+  transition: all 0.1s;
+}
+.navbar-main-icon-section-icon::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 13px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: inherit;
+  transition: all 0.1s;
+}
+
+.navbar-main-icon-text {
+  z-index: 110;
+  transition: color 0.1s;
+}
+.active {
+  color: #fff;
+}
+.active-icon {
+  background-color: #fff;
+}
+.active-icon::before,
+.active-icon::after {
+  width: 17px;
+}
+
+.navbar-main-list-section {
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+}
+.navbar-item:nth-child(2) {
+  flex: 1 1 400px;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-link {
+  transition: transform 0.2s ease-in-out 0.01s;
+  display: flex;
+  text-decoration: none;
+  color: #262629;
+  text-align: center;
+}
+.navbar-link:hover {
+  color: #552f36;
+}
+
+.navbar-main-icon-active {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  display: flex;
+  width: 242.7px;
+  background-color: #fff;
+  border-radius: 16px;
+  z-index: 100;
+  margin-left: -20px;
+}
+
+.navbar-main-icon-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 110;
+  width: 100%;
+  height: 55px;
+  background-color: #552f36;
+  border-radius: 16px 16px 0 0;
+}
+
+.navbar-list-active {
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+}
+
+.navbar-item-active {
+  display: flex;
+}
+
+.navbar-link-active {
+  transition: transform 0.2s ease-in-out 0.01s;
+  text-decoration: none;
+  color: #262629;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar-item-active:hover > .navbar-link-active {
+  color: #552f36;
+  background-color: #f5f5f5;
+}
+.navbar-item-active:last-child:hover > .navbar-link-active {
+  color: #552f36;
+  background-color: #f5f5f5;
+  border-radius: 0px 0px 16px 16px;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .navbar-item:nth-child(1),
+  .navbar-item:nth-child(2) {
+    display: none;
+  }
+  .navbar-main-section-scroll-active {
+    margin-left: -20px;
+  }
+  .navbar-main-icon-section {
+    padding: 10px 0px;
+  }
+  .navbar-main-icon-active::before {
+    height: 55px;
+  }
+  .navbar-list-active {
+    padding-top: 60px;
+  }
+  .navbar-main-body {
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-main-list-section {
+    display: none;
+  }
+  .navbar-main-section-scroll-active {
+    margin-left: -20px;
+    width: 100%;
+    padding: 20px;
+  }
+  .navbar-main-icon-active::before {
+    height: 55px;
+  }
+  .navbar-list-active {
+    padding-top: 60px;
+  }
+  .navbar-main-body {
+    margin: 0;
+    align-items: center;
+    column-gap: 60px;
+  }
+  .navbar-above-logo-img {
+    max-width: 100px;
+    max-height: 37px;
+    align-self: center;
+  }
+  .navbar-above-whatsapp {
+    display: none;
+  }
+  .navbar-above-phone {
+    display: none;
+  }
+}
+
+.navbar-above-contacts-body {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-above-whatsapp.mobile {
+  display: flex;
+  font-size: 12px;
+  text-decoration: none;
+  color: #262629;
+  letter-spacing: 0;
+  margin-right: 0;
+}
+
+.navbar-above-phone.mobile {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 0;
+  font-family: "Century Gothic";
+}

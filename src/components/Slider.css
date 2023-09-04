@@ -1,0 +1,56 @@
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  column-gap: 40px;
+}
+
+.slider-right-button {
+  transition: color 0.3s;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #bebebe;
+  transform: translateY(50%);
+}
+
+.slider-left-button {
+  transition: color 0.3s;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #bebebe;
+  transform: translateY(50%);
+}
+
+.slider-right-button:hover,
+.slider-left-button:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slider-right-button {
+    right: 0px;
+  }
+  .slider-left-button {
+    left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider-right-button {
+    right: -8px;
+  }
+  .slider-left-button {
+    left: -20px;
+  }
+  .slider-wrapper {
+    display: flex;
+  }
+}

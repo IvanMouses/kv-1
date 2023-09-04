@@ -1,0 +1,85 @@
+.slide {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 322px;
+  background: linear-gradient(rgba(85, 47, 54, 0.9), rgba(85, 47, 54, 0.9)),
+    url("/public/images/secondform/background.jpg") 0 0 / cover no-repeat;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide-main-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  flex: 1 1 auto;
+  row-gap: 40px;
+}
+
+.slide-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.slide-title {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  margin-bottom: 6px;
+}
+
+.slide-subtitle {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  margin-bottom: 23px;
+}
+
+.slide-text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.slide-button-info {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: none;
+  background-color: inherit;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slide-button-info:hover {
+  color: #b3904e;
+}
+
+.slide-icon-info {
+  width: 17px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 375px) {
+  .slide {
+    align-items: center;
+    padding: 20px 0px;
+  }
+}

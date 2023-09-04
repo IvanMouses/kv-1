@@ -1,0 +1,56 @@
+.slide-modal-container {
+  display: flex;
+  max-width: 50vw;
+  column-gap: 30px;
+  padding: 40px;
+  border-radius: 30px;
+  background: linear-gradient(rgba(85, 47, 54, 0.9), rgba(85, 47, 54, 0.9)),
+    url("/public/images/secondform/background.jpg") 0 0 / cover no-repeat;
+}
+
+.slide-modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-modal-title {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  margin-bottom: 6px;
+}
+
+.slide-modal-subtitle {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  margin-bottom: 23px;
+}
+
+.slide-modal-text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .slide-modal-container {
+    column-gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .slide-image {
+    max-width: 150px;
+  }
+}

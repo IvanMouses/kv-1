@@ -1,0 +1,124 @@
+.secondform-section {
+  padding: 42px 20px;
+  background-image: linear-gradient(
+      rgba(85, 47, 54, 0.9),
+      rgba(85, 47, 54, 0.9)
+    ),
+    url("/public/images/secondform/background.jpg");
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.secondform-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 85px;
+}
+
+.secondform-image-container {
+  position: relative;
+}
+
+.secondform-image-text {
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+  transform: rotate(8deg);
+  color: #262629;
+  text-align: justify;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.68px;
+}
+
+.secondform-form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondform-title {
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+  color: #fff;
+}
+
+.secondform-subtitle {
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  margin-bottom: 41px;
+  color: #fff;
+}
+
+.secondform-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #fff;
+}
+
+.secondform-link {
+  font-family: "Century Gothic";
+  text-decoration: underline;
+  color: #fff;
+}
+
+.secondform-link:hover {
+  color: #ffffffc0;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .secondform-container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .secondform-container {
+    flex-direction: column;
+  }
+  .secondform-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  .secondform-subtitle {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .secondform-text {
+    font-size: 12px;
+    text-align: center;
+  }
+  .secondform-image-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .secondform-image {
+    max-width: 50vw;
+  }
+  .secondform-image-text {
+    position: absolute;
+    bottom: 22px;
+    left: 82px;
+    transform: rotate(8deg);
+    color: #262629;
+    text-align: justify;
+    font-family: "Century Gothic";
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.68px;
+  }
+}

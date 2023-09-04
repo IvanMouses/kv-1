@@ -1,0 +1,144 @@
+.how-to-use-modal-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.how-to-use-modal-body {
+  display: flex;
+  column-gap: 90px;
+}
+
+.how-to-use-modal-leftside {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30%;
+}
+
+.how-to-use-modal-image-container {
+  display: flex;
+  column-gap: 35px;
+  margin-bottom: 16px;
+}
+
+.how-to-use-modal-item-row {
+  display: flex;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.how-to-use-modal-item-icon {
+  font-size: 30px;
+  color: #b3904e;
+}
+
+.how-to-use-modal-item-item {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.how-to-use-modal-stages-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.how-to-use-modal-stages-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.how-to-use-modal-stages-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.how-to-use-modal-items-row {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.how-to-use-modal-items-icon {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #b3904e;
+  text-align: center;
+  color: #b3904e;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.how-to-use-modal-items {
+  color: #262629;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.how-to-use-modal-rightside {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  flex: 1 1 70%;
+  max-width: 360px;
+}
+
+.how-to-use-modal-list-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.how-to-use-modal-list-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+}
+.how-to-use-modal-span {
+  color: #b3904e;
+}
+
+.how-to-use-modal-list-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.how-to-use-modal-list-row {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.how-to-use-modal-list-icon {
+  font-size: 10px;
+  min-width: 10px;
+  color: #b3904e;
+}
+
+.how-to-use-modal-list-item {
+  color: #262629;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}

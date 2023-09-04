@@ -1,0 +1,81 @@
+.advantage-card-item {
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+  flex: 0 1 182px;
+  min-height: 160px;
+  height: 100%;
+}
+
+.advantage-card-title-section {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.advantage-card-title {
+  color: #4f4f4f;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.63px;
+}
+
+.advantage-card-text {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+.advantage-more-info-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  color: #4f4f4f;
+}
+
+.advantage-more-info-icon-active {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  color: #4f4f4f;
+  transform: rotate(180deg);
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .advantage-card-item {
+    flex: 0 0 180px;
+    padding: 15px 15px 20px 15px;
+  }
+  .advantage-more-info-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+  .advantage-more-info-icon-active {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .advantage-more-info-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+  .advantage-more-info-icon-active {
+    bottom: 10px;
+    right: 10px;
+  }
+  .advantage-card-item {
+    min-height: 200px;
+    height: 100%;
+  }
+}

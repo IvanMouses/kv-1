@@ -1,0 +1,40 @@
+.hero-section {
+  margin-bottom: 51px;
+  padding: 0px 20px;
+}
+
+.hero-container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.hero-body {
+  text-align: center;
+  background-color: #fffcf6;
+  padding: 20px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.hero-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-family: "Century Gothic";
+  margin-bottom: 11px;
+}
+
+.hero-text {
+  font-size: 12px;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 375px) {
+  .hero-section {
+    margin-bottom: 30px;
+  }
+  .hero-body {
+    padding: 10px;
+  }
+}

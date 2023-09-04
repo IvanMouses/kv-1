@@ -1,0 +1,146 @@
+.form-callback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 30px;
+  margin: 0px 0px 16px 0px;
+}
+.form-callback-wide {
+  justify-content: flex-start;
+}
+
+.form-input-row {
+  position: relative;
+}
+
+.form-input-row-wide {
+  position: relative;
+  width: 348px;
+}
+.form-input-row-wide:last-of-type {
+  width: 364px;
+}
+.form-input-row.invalid-input::before {
+  transition: 0.3s;
+  content: "Это обязательное поле";
+  color: red;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-size: 12px;
+  z-index: -1;
+}
+.form-input-row-wide.invalid-input::before {
+  transition: 0.3s;
+  content: "Это обязательное поле";
+  color: red;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  font-size: 12px;
+  z-index: -1;
+}
+.form-input-row.invalid-input.active::before {
+  z-index: 0;
+  top: -20px;
+  display: block;
+}
+.form-input-row-wide.invalid-input.active::before {
+  z-index: 0;
+  top: -20px;
+  display: block;
+}
+
+.form-input {
+  display: flex;
+  font-family: "Century Gothic";
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 14px 16px;
+  min-width: 206px;
+  width: inherit;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.form-input-wide {
+  padding: 14px 0px 14px 16px;
+}
+.form-input::placeholder {
+  font-family: "Century Gothic";
+}
+.input-job {
+  cursor: pointer;
+  min-width: 182px;
+  padding: 14px 40px 14px 16px;
+}
+.input-job-wide {
+  width: 308px;
+}
+.input-job-wide::placeholder {
+  padding: 0;
+}
+.input-job-active {
+  border-radius: 14px 14px 0px 0px;
+}
+
+.icon-row {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+.icon-row-wide {
+  width: 364px;
+}
+.icon-row-active {
+  overflow: visible;
+}
+.form-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+}
+.form-input-icon-active {
+  transform: rotate(180deg) translate(0px, 8px);
+}
+
+.form-input-select {
+  position: absolute;
+  top: -180px;
+}
+.form-input-select-active {
+  top: 44px;
+}
+.form-input-select-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.form-input-select-list-wide {
+  width: 364px;
+}
+.form-input-select-item {
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #262629;
+}
+.form-input-select-value {
+  font-size: 13px;
+  letter-spacing: 1.56px;
+  padding: 5px 0px;
+}
+.form-input-select-item:hover {
+  color: #939393;
+  background-color: #f5f5f5;
+}
+.form-input-select-item:last-child:hover {
+  border-radius: 0px 0px 16px 16px;
+}

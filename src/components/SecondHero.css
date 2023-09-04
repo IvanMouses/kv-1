@@ -1,0 +1,40 @@
+.second-hero-section {
+  padding: 88px 20px;
+  background: url("/public/images/secondhero/background.png") 0 0 / cover
+    no-repeat;
+}
+
+.second-hero-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.second-hero-body {
+  padding: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  text-align: center;
+  max-width: fit-content;
+  margin: 0px auto;
+}
+
+.second-hero-title {
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.08px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 375px) {
+  .second-hero-section {
+    padding: 40px 20px;
+  }
+  .second-hero-body {
+    padding: 20px;
+  }
+  .second-hero-title {
+    margin-bottom: 20px;
+  }
+}

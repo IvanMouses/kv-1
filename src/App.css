@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/public/fonts/CenturyGothic-Bold.eot");
+  src: url("/public/fonts/CenturyGothic-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/CenturyGothic-Bold.woff2") format("woff2"),
+    url("/public/fonts/CenturyGothic-Bold.woff") format("woff"),
+    url("/public/fonts/CenturyGothic-Bold.ttf") format("truetype"),
+    url("/public/fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/public/fonts/CenturyGothic.eot");
+  src: url("/public/fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/CenturyGothic.woff2") format("woff2"),
+    url("/public/fonts/CenturyGothic.woff") format("woff"),
+    url("/public/fonts/CenturyGothic.ttf") format("truetype"),
+    url("/public/fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  color: #262629;
+}

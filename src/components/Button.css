@@ -1,0 +1,40 @@
+.button {
+  color: #fff;
+  padding: 12px 19px;
+  border: 1px solid;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  transition: all 0.3s ease 0s;
+  width: inherit;
+}
+
+.dark {
+  background-color: #552f36;
+  min-width: 180px;
+}
+.light {
+  background-color: #b3904e;
+  border: 1px solid #b3904e;
+  min-width: 238px;
+}
+.transparent {
+  border: 1px solid #b3904e;
+  color: #b3904e;
+  min-width: 140px;
+}
+
+.button.dark:hover {
+  background-color: #f4f4f4;
+  color: #552f36;
+}
+.button.light:hover {
+  background-color: #f4f4f4;
+  color: #b3904e;
+}
+.button.transparent:hover {
+  background-color: #b3904e;
+  color: #fff;
+}

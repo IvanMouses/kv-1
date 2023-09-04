@@ -1,0 +1,23 @@
+.cards-container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.cards-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 43px;
+  row-gap: 30px;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .cards-container {
+    padding: 0px 20px;
+  }
+  .cards-items {
+    column-gap: 30px;
+  }
+}

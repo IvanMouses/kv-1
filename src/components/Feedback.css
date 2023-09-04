@@ -1,0 +1,43 @@
+.feedback-section {
+  padding: 70px 20px 120px 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.25);
+}
+
+.feedback-container {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.feedback-title-container {
+  margin-bottom: 55px;
+}
+
+.feedback-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  .feedback-section {
+    padding: 40px 20px;
+  }
+  .feedback-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feedback-title-container {
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback-title {
+    font-size: 16px;
+    text-align: center;
+  }
+}

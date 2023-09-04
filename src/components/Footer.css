@@ -1,0 +1,234 @@
+.footer-section {
+  background-image: linear-gradient(
+      rgba(85, 47, 54, 0.9),
+      rgba(85, 47, 54, 0.9)
+    ),
+    url("/public/images/secondform/background.jpg");
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  box-shadow: -2px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 110px 20px 80px 20px;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.footer-body {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 80px;
+}
+
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 25%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+  max-width: 175px;
+}
+
+.footer-logo-text {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+.footer-logo-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-links-section {
+  display: flex;
+  column-gap: 30px;
+  flex: 1 1 75%;
+}
+
+.footer-links-menu,
+.footer-links-product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-links-menu {
+  flex: 1 1 50%;
+}
+.footer-links-product {
+  flex: 1 1 60%;
+}
+
+.footer-links-menu-title,
+.footer-links-product-title,
+.footer-links-contacts-title {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+}
+.footer-links-contacts-title {
+  margin-bottom: 20px;
+}
+
+.footer-links-menu-list,
+.footer-links-product-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.footer-links-menu-link,
+.footer-links-product-link {
+  transition: color 0.3s;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  text-decoration: none;
+}
+.footer-links-menu-link:hover,
+.footer-links-product-link:hover {
+  color: #b3904e;
+}
+
+.footer-links-contacts {
+  display: flex;
+  flex: 1 1 70%;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.footer-links-contacts-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-contacts-row {
+  display: flex;
+  column-gap: 8px;
+}
+.footer-links-contacts-row:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer-links-contacts-row-title {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+.footer-links-contacts-row-text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.footer-links-contacts-social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.footer-links-contacts-social-title {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+
+.footer-links-contacts-social-icons-container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-links-contacts-social-icon {
+  transition: color 0.3s;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-links-contacts-social-icon:hover {
+  color: #b3904e;
+}
+
+.footer-copyright-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  text-align: center;
+}
+
+.footer-copyright-text {
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 40px 20px;
+  }
+  .footer-body {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 40px;
+  }
+  .footer-links-section {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-section {
+    padding: 40px 20px;
+  }
+  .footer-body {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-items: center;
+  }
+  .footer-links-section {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links-contacts-row {
+    flex-direction: column;
+  }
+  .footer-links-contacts-title {
+    margin-bottom: 10px;
+  }
+  .footer-links-contacts {
+    row-gap: 20px;
+  }
+  .footer-logo-section {
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-links-contacts-social {
+    align-items: center;
+  }
+}

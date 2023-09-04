@@ -1,0 +1,273 @@
+.howtouse-section {
+  padding: 115px 20px 155px 20px;
+}
+
+.howtouse-container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+.howtouse-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.howtouse-cards {
+  margin-bottom: 90px;
+}
+
+.howtouse-cards-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.howtouse-cards-item-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.howtouse-cards-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.howtouse-cards-item-image {
+  margin-bottom: 12px;
+}
+
+.howtouse-cards-item-title {
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.92px;
+  margin-bottom: 12px;
+}
+
+.howtouse-cards-item-list {
+  margin-bottom: 10px;
+}
+
+.howtouse-cards-item-row {
+  display: flex;
+  align-items: center;
+}
+
+.howtouse-cards-item-item {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.howtouse-cards-item-icon {
+  width: 30px;
+  height: 30px;
+  color: #b3904e;
+  margin-left: -10px;
+}
+
+.howtouse-cards-item-button {
+  transition: 0.3s;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border: none;
+  border-radius: none;
+  background-color: inherit;
+  color: #b3904e;
+  font-family: "Century Gothic";
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+.howtouse-cards-item-button:hover {
+  color: #552f36;
+}
+
+.howtouse-cards-item-button-icon {
+  width: 17px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.howtouse-social {
+  display: flex;
+}
+
+.howtouse-social-title-section {
+  display: flex;
+  flex: 1 1 30%;
+  flex-direction: column;
+}
+
+.howtouse-social-title {
+  color: #262629;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.howtouse-social-text {
+  color: #262629;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  max-width: 300px;
+}
+
+.howtouse-social-socialmedia-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.howtouse-social-socialmedia-images {
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
+.howtouse-social-socialmedia-image {
+  background-color: transparent;
+  filter: drop-shadow(4px 4px 10px #000);
+}
+
+.social-socialmedia-image-2,
+.social-socialmedia-image-1 {
+  transform: translate(65px, 0px);
+}
+
+.howtouse-social-socialmedia-buttons {
+  display: flex;
+  column-gap: 80px;
+  transform: translate(65px, 0px);
+}
+
+/* АДАПТИВ */
+
+@media (max-width: 768px) {
+  .howtouse-section {
+    padding: 72px 20px;
+  }
+  .howtouse-cards-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .howtouse-social {
+    flex-direction: column;
+  }
+  .howtouse-social-title-section {
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+  }
+  .howtouse-social-title {
+    margin-bottom: 20px;
+  }
+  .howtouse-social-text {
+    max-width: fit-content;
+  }
+  .howtouse-social-socialmedia-images {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .howtouse-social-socialmedia-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 375px) {
+  .howtouse-section {
+    padding: 40px 20px;
+  }
+  .howtouse-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .howtouse-cards {
+    margin-bottom: 40px;
+  }
+  .howtouse-cards-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .howtouse-social {
+    flex-direction: column;
+  }
+  .howtouse-social-title-section {
+    flex: 1 1 auto;
+    margin-bottom: 0px;
+  }
+  .howtouse-social-title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .howtouse-social-text {
+    max-width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .howtouse-social-socialmedia-images {
+    display: none;
+  }
+  .howtouse-social-socialmedia-buttons {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .howtouse-cards-item-body {
+    display: flex;
+    flex: 0 0 130px;
+    padding: 10px;
+    max-width: 150px;
+  }
+  .howtouse-cards-item {
+    flex: 0 0 150px;
+    max-width: 150px;
+  }
+  .howtouse-cards-item-image {
+    margin-bottom: 12px;
+    max-width: 100px;
+    align-self: center;
+  }
+  .howtouse-cards-item-title {
+    font-size: 12px;
+    text-align: center;
+  }
+  .howtouse-cards-item-item {
+    font-size: 10px;
+  }
+  .howtouse-cards-item-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
+  }
+  .howtouse-cards-item-button {
+    display: none;
+  }
+}
